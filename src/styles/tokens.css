@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #F26522;
+  --color-primary-variant: #D95314;
+  --color-secondary: #FFB347;
+  --color-background: #9FA8B2;
+  --color-surface: #1F2428;
+  --color-surface-glass: rgba(216, 223, 229, 0.85);
+  --color-on-primary: #FFFFFF;
+  --color-on-surface: #F4F6F8;
+  --color-error: #DC2626;
+  --color-on-error: #FFFFFF;
+  --color-outline: rgba(255, 255, 255, 0.45);
+
+  --font-display: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
+  --text-4xl: 32px;
+  --text-5xl: 40px;
+  --text-6xl: 48px;
+}
+
+[data-theme="dark"] {
+  --color-primary: #FF7332;
+  --color-primary-variant: #F26522;
+  --color-secondary: #FFC46B;
+  --color-background: #14181C;
+  --color-surface: #1B2025;
+  --color-surface-glass: rgba(34, 40, 46, 0.88);
+  --color-on-primary: #FFFFFF;
+  --color-on-surface: #F8FAFC;
+  --color-error: #EF4444;
+  --color-on-error: #FFFFFF;
+  --color-outline: rgba(255, 255, 255, 0.35);
+}
+
+body {
+  font-family: var(--font-sans);
+  background: linear-gradient(155deg, #B2BAC3 0%, #8C95A0 50%, #7B848F 100%);
+  color: var(--color-on-surface);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
